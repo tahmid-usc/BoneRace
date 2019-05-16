@@ -1,0 +1,26 @@
+Results
+
+RBF
+
+          y
+pred       Asian Black Hispanic White
+  Asian       53    19       22    39
+  Black        9    32        9    20
+  Hispanic     6    12       18    19
+  White        3     4        3    12
+> err <- mean(pred != y)
+> err
+[1] 0.5892857
+
+
+Laplace
+
+          y
+pred       Asian Black Hispanic White
+  Asian       58    20       22    38
+  Black        7    31        7    17
+  Hispanic     4     8       20    10
+  White        2     8        3    25
+> err <- mean(pred != y)
+> err
+[1] 0.5214286

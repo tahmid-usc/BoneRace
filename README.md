@@ -1,2 +1,2 @@
-# BoneRace
-Classify race based on sparse functional bone density data. 
+# BoneDensity
+Bone Density FDA GP
