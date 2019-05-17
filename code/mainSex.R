@@ -8,7 +8,7 @@ source("code/matern32.R")
 
 fet <- lapply(train, feature) #estimate hyperparameter
 
-save(fet, file = "fetmatern52.Rdata")
+save(fet, file = "fetmatern32fem.Rdata")
 
 # Plot fitted
 ageseq <- seq(-3,3, length = 100)
@@ -55,4 +55,4 @@ err
 
 #Training error
 #Full training
-#laplace : 0.5214286, RBF : 0.5892857, matern52: 0.2785714. matern32: 0.2857143
+#laplace : 0.5214286, RBF : 0.5892857, matern52: 0.5964286. matern32: 0.5821429

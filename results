@@ -24,3 +24,88 @@ pred       Asian Black Hispanic White
 > err <- mean(pred != y)
 > err
 [1] 0.5214286
+
+mater 5/2
+
+table(pred, y)
+          y
+pred       Asian Black Hispanic White
+  Asian       52    18       22    39
+  Black        9    31        9    20
+  Hispanic     7    13       17    18
+  White        3     5        4    13
+> err <- mean(pred != y)
+> err
+[1] 0.5964286
+> 
+
+matern 3/2
+
+> table(pred, y)
+          y
+pred       Asian Black Hispanic White
+  Asian       53    19       20    39
+  Black        9    32       10    18
+  Hispanic     7    13       18    19
+  White        2     3        4    14
+> err <- mean(pred != y)
+> err
+[1] 0.5821429
+
+#---------------------------------------------
+
+Only female----------------------------------
+
+RBF
+
+          y
+pred       Asian Black Hispanic White
+  Asian       27    10       12    20
+  Black        5    23        7    13
+  Hispanic     0     4        5     2
+  White        3     6        3    13
+> err <- mean(pred != y)
+> err
+[1] 0.5555556
+
+
+laplace
+
+
+table(pred, y)
+          y
+pred       Asian Black Hispanic White
+  Asian       31    12       14    21
+  Black        3    25        4     8
+  Hispanic     0     2        8     2
+  White        1     4        1    17
+> err <- mean(pred != y)
+> err
+[1] 0.4705882
+
+
+matern 52
+
+table(pred, y)
+          y
+pred       Asian Black Hispanic White
+  Asian       27    10       11    21
+  Black        5    23        7    13
+  Hispanic     2     3        7     1
+  White        1     7        2    13
+> err <- mean(pred != y)
+> err
+[1] 0.5424837
+
+
+matern 32
+
+          y
+pred       Asian Black Hispanic White
+  Asian       28    10       11    20
+  Black        4    24        7    13
+  Hispanic     2     2        7     2
+  White        1     7        2    13
+> err <- mean(pred != y)
+> err
+[1] 0.5294118
